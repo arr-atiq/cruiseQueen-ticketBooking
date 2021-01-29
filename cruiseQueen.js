@@ -15,7 +15,7 @@ function fClassEventHandler(isIncrease){
         fCount = newFCountInput - 1;
     }
     fCountInput.value = fCount;
-
+    subTotalEvent();
 }
 
 document.getElementById("ePlus-btn").addEventListener("click", function(){
@@ -35,4 +35,13 @@ function eClassEventHandler(isIncrease){
         eCount = newECountInput - 1;
     }
     eCountInput.value = eCount;
+    subTotalEvent();
+}
+function subTotalEvent(){
+    const fClassPrice = document.getElementById("fClass-count");
+    const newFClassPrice = parseFloat(fClassPrice.value);
+    const eClassPrice = document.getElementById("eClass-count");
+    const newEClassPrice = parseFloat(eClassPrice.value);
+    subTotalPrice = newFClassPrice * 150 + newEClassPrice * 100;
+    document.getElementById("sub-total").innerText = subTotalPrice;
 }
