@@ -78,6 +78,10 @@ nav ul li a:hover, a.active{
     font-weight: 500;
     margin-bottom: 10px;
 }
+.ticket-input{
+    display: flex;
+    padding: 0 10px;
+}
 .booking-form input{
     width: 100%;
     display: block;
