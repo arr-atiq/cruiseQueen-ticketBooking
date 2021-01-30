@@ -65,8 +65,32 @@ nav ul li a:hover, a.active{
     width: 65%;
     margin-left: 180px;
 }
+#payment-form{
+    display: none;
+}
+.confirm-content{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding:0 50px;
+    border-radius: 5px;
+    float: right;
+    width: 75%;
+    margin-left: 180px;
+}
+.confirm-content h3{
+    text-align: center;
+    color: #3352F2;
+    margin: 8% 0;
+}
 .booking-form h3{
     margin: 10px 0px;
+}
+.btn-area{
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+.fBtn{
+    margin-right: 50%;
 }
 .booking-form  .input-group{
     margin: 10px 0;
@@ -120,6 +144,7 @@ nav ul li a:hover, a.active{
     border: none;
     color: #fff;
     font-weight: 500;
+    cursor: pointer;
     background-color:  #E33741;
 }
 .amount{

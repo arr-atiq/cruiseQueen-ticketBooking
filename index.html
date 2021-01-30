@@ -40,7 +40,7 @@
         </div>
 
 
-        <div class="booking-form">
+        <div id="main-form" class="booking-form">
             <h3>Book Ocean Time</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -63,18 +63,26 @@
             <div class="ticket-area">
                 <h6>First Class ($150)</h6>
                 <div class="ticket-input">
-                    <button onclick="classEventHandler('fClass', false)" class="btn btn-primary"style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i class="fas fa-minus"></i></button>
+                    <button onclick="classEventHandler('fClass', false)" class="btn btn-primary"
+                        style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i
+                            class="fas fa-minus"></i></button>
                     <input id="fClass-count" type="text" class="form-control text-center" value="0">
-                    <button onclick="classEventHandler('fClass', true)" class="btn btn-primary" style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i class="fas fa-plus"></i></button>
+                    <button onclick="classEventHandler('fClass', true)" class="btn btn-primary"
+                        style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i
+                            class="fas fa-plus"></i></button>
                 </div>
             </div>
 
             <div class="ticket-area">
                 <h6>Economy ($100)</h6>
                 <div class="ticket-input">
-                    <button onclick="classEventHandler('eClass', false)" class="btn btn-primary"style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i class="fas fa-minus"></i></button>
+                    <button onclick="classEventHandler('eClass', false)" class="btn btn-primary"
+                        style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i
+                            class="fas fa-minus"></i></button>
                     <input id="eClass-count" type="text" class="form-control text-center" value="0">
-                    <button onclick="classEventHandler('eClass', true)" class="btn btn-primary" style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i class="fas fa-plus"></i></button>
+                    <button onclick="classEventHandler('eClass', true)" class="btn btn-primary"
+                        style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i
+                            class="fas fa-plus"></i></button>
                 </div>
             </div>
             <div class="calculations">
@@ -105,7 +113,18 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button onclick="whenEnterBtn()" class="btn-style">Book Now</button>
+        </div>
+        <div id="payment-form">
+            <div class="confirm-content">
+                <h3>Happy Journey</h3>
+                <div class="btn-area">
+                    <h4>Please Confirm Your Payment</h4>
+                    <button class="btn btn-success fBtn">Confirm</button>
+                    <button class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+
         </div>
     </main>
     <script src="cruiseQueen.js"></script>

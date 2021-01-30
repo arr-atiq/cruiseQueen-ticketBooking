@@ -31,7 +31,12 @@ function getInputValue(ticket){
     const newTicketInput = parseFloat(ticketInput.value);
     return newTicketInput;
 }
-
+function whenEnterBtn(){
+    const bookingForm = document.getElementById("main-form");
+    bookingForm.style.display = "none";
+    const confirmPayment = document.getElementById("payment-form");
+    confirmPayment.style.display = "block";
+}
 
 // my working code
 // document.getElementById("plus-btn").addEventListener("click", function(){
