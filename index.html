@@ -63,18 +63,18 @@
             <div class="ticket-area">
                 <h6>First Class ($150)</h6>
                 <div class="ticket-input">
-                    <button id="minus-btn" class="btn btn-primary"style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i class="fas fa-minus"></i></button>
+                    <button onclick="classEventHandler('fClass', false)" class="btn btn-primary"style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i class="fas fa-minus"></i></button>
                     <input id="fClass-count" type="text" class="form-control text-center" value="0">
-                    <button id="plus-btn" class="btn btn-primary" style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i class="fas fa-plus"></i></button>
+                    <button onclick="classEventHandler('fClass', true)" class="btn btn-primary" style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
 
             <div class="ticket-area">
                 <h6>Economy ($100)</h6>
                 <div class="ticket-input">
-                    <button id="eMinus-btn" class="btn btn-primary"style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i class="fas fa-minus"></i></button>
+                    <button onclick="classEventHandler('eClass', false)" class="btn btn-primary"style="height: fit-content; margin-top: 13px; margin-right: 10px;"><i class="fas fa-minus"></i></button>
                     <input id="eClass-count" type="text" class="form-control text-center" value="0">
-                    <button id="ePlus-btn" class="btn btn-primary" style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i class="fas fa-plus"></i></button>
+                    <button onclick="classEventHandler('eClass', true)" class="btn btn-primary" style="height: fit-content; margin-top: 13px; margin-left: 10px;"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
             <div class="calculations">
