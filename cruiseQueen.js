@@ -20,7 +20,7 @@ function calculateValue(){
     const eClassCount = getInputValue("eClass");
     const fCount = fClassCount*150 + eClassCount*100;
     document.getElementById("sub-total").innerText = fCount;
-    const tax = fCount * 0.1;
+    const tax = Math.round(fCount * 0.1);
     document.getElementById("tax-total").innerText = tax;
     const grandTotal = tax + fCount;
     document.getElementById("grand-total").innerText = grandTotal;
